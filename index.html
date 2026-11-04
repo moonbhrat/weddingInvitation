@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Praval &amp; Shivani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Hind:wght@400;500;600&family=Yatra+One&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="lotus" viewBox="0 0 64 40">
+    <path d="M32 36 C24 30 24 14 32 4 C40 14 40 30 32 36Z"/>
+    <path d="M32 36 C20 34 12 24 12 14 C22 16 29 24 32 36Z"/>
+    <path d="M32 36 C44 34 52 24 52 14 C42 16 35 24 32 36Z"/>
+    <path d="M32 36 C16 38 6 32 2 24 C14 22 26 28 32 36Z"/>
+    <path d="M32 36 C48 38 58 32 62 24 C50 22 38 28 32 36Z"/>
+  </symbol>
+</svg>
+
+<div class="card">
+  <div class="toran" aria-hidden="true"></div>
+
+  <nav class="tabs" aria-label="कार्ड के पृष्ठ">
+    <a href="#swagat" data-tab="swagat">स्वागत</a>
+    <a href="#utsav" data-tab="utsav">उत्सव</a>
+    <a href="#parivar" data-tab="parivar">परिवार</a>
+  </nav>
+
+  <!-- Page 1: parents, then the couple -->
+  <section class="view" id="view-swagat" aria-label="स्वागत">
+    <div class="mantra">
+      <div class="shri">
+        <p class="kicker">॥ श्री गणेशाय नमः ॥</p>
+        <p class="kicker">॥ श्री वैभव लक्ष्म्यै नमः ॥</p>
+      </div>
+      <p class="shloka" lang="sa">
+        <span>मङ्गलं भगवान् विष्णुः, मङ्गलं गरुडध्वजः।</span>
+        <span>मङ्गलं पुण्डरीकाक्षः, मङ्गलायतनो हरिः॥</span>
+      </p>
+    </div>
+    <div class="parents">
+      <p class="label">सस्नेह निमंत्रण</p>
+      <p class="pname">Dr. Satish Chandra Srivastava</p>
+      <p class="and">एवं</p>
+      <p class="pname">Gita Srivastava</p>
+      <p class="addr">Maharajganj Tarai, Dist. Balrampur</p>
+    </div>
+    <p class="invite">आप सभी को सपरिवार सादर आमंत्रित करते हैं। हमारे परिवार के इस मंगल उत्सव में पधारकर वर और वधू को अपना आशीर्वाद दीजिए।</p>
+
+    <div class="div" aria-hidden="true"><svg class="lotus"><use href="#lotus"/></svg></div>
+
+    <div class="arch">
+      <svg class="lotus" aria-hidden="true"><use href="#lotus"/></svg>
+      <p class="label">शुभ विवाह</p>
+      <h1 class="couple">
+        <span class="gname">Praval S. Srivastava</span>
+        <span class="weds">weds</span>
+        <span class="gname">Shivani Srivastava</span>
+      </h1>
+      <p class="when">शनिवार · 21 नवंबर 2026</p>
+    </div>
+    <p class="count" id="count" hidden></p>
+
+    <div class="pager solo"><a class="btn primary" href="#utsav">मंगल कार्यक्रम देखें &rarr;</a></div>
+  </section>
+
+  <!-- Page 2: the three days -->
+  <section class="view" id="view-utsav" aria-label="उत्सव" hidden>
+    <p class="kicker">॥ मंगल कार्यक्रम ॥</p>
+    <h2 class="sec-title">तीन दिन, एक उत्सव</h2>
+
+    <ol class="events">
+      <li class="ev">
+        <div class="ev-date"><span class="day">20</span><span class="mon">नवंबर<br>शुक्रवार</span></div>
+        <div>
+          <h3>तेल पूजन</h3>
+          <span class="sub">Tel Pujan</span>
+          <p class="meta" data-ev="tel" hidden></p>
+        </div>
+      </li>
+      <li class="ev main">
+        <div class="ev-date"><span class="day">21</span><span class="mon">नवंबर<br>शनिवार</span></div>
+        <div>
+          <h3>शुभ विवाह</h3>
+          <span class="sub">Vivah</span>
+          <p class="meta"><strong>बारात प्रस्थान:</strong> Laliya Road, Maharajganj Tarai</p>
+          <p class="meta"><strong>विवाह स्थल:</strong> Ban Sarita Resort, Bahraich</p>
+        </div>
+      </li>
+      <li class="ev">
+        <div class="ev-date"><span class="day">23</span><span class="mon">नवंबर<br>सोमवार</span></div>
+        <div>
+          <h3>रिसेप्शन</h3>
+          <span class="sub">Reception</span>
+          <p class="meta" data-ev="reception" hidden></p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="note">समय और अन्य जानकारी के लिए संपर्क करें<br><a class="tel" href="tel:+919889234012">9889234012</a></p>
+
+    <div class="pager">
+      <a class="btn" href="#swagat">&larr; स्वागत</a>
+      <a class="btn primary" href="#parivar">परिवार &rarr;</a>
+    </div>
+  </section>
+
+  <!-- Page 3: family, children, poem -->
+  <section class="view" id="view-parivar" aria-label="परिवार" hidden>
+    <p class="kicker">॥ दर्शनाभिलाषी ॥</p>
+    <h2 class="sec-title">आपके आगमन की प्रतीक्षा में</h2>
+
+    <p class="label sw">स्वागतकांक्षी</p>
+    <ul class="family">
+      <li class="fname">Alpana Srivastava</li>
+      <li class="fname">Prakhar S. Srivastava</li>
+      <li class="fname">Deepanjali Srivastava</li>
+      <li class="fname">Apoorv S. Srivastava</li>
+      <li class="fname">Swechchha Srivastava</li>
+      <li class="fname">Pranjali Srivastava</li>
+      <li class="fname">Shashank Srivastava</li>
+    </ul>
+
+    <div class="div" aria-hidden="true"><svg class="lotus"><use href="#lotus"/></svg></div>
+
+    <h2 class="sec-title">नन्हे मेहमानों की ओर से</h2>
+    <p class="lead">चाचू की शादी में सबसे ज़्यादा उत्साह हमारा है।</p>
+
+    <ul class="kids">
+      <li class="kid"><svg class="lotus" aria-hidden="true"><use href="#lotus"/></svg><span>Divisha</span></li>
+      <li class="kid"><svg class="lotus" aria-hidden="true"><use href="#lotus"/></svg><span>Ayaansh</span></li>
+      <li class="kid"><svg class="lotus" aria-hidden="true"><use href="#lotus"/></svg><span>Parv</span></li>
+      <li class="kid"><svg class="lotus" aria-hidden="true"><use href="#lotus"/></svg><span>Darsh</span></li>
+    </ul>
+
+    <blockquote class="poem">
+      <p>चाचू की शादी का आया है त्योहार,<br>घर-आँगन में सजा है खुशियों का बाज़ार।<br>हम नन्हे-मुन्ने सबसे आगे नाचेंगे,<br>ढोल-नगाड़ों संग झूमेंगे, गाएँगे।</p>
+      <p>चाचा जी की शादी में जल्दी से आना,<br>मम्मी-पापा को भी अपने साथ में लाना।<br>भूल न जाना, धूम-धड़ाका मचाना!</p>
+      <p>सजी-धजी चाची घर में आएँगी,<br>मीठी-मीठी हँसी साथ में लाएँगी।<br>आपकी दुआएँ हमारे साथ रहें,<br>बस इतनी विनती है, आप ज़रूर आएँ।</p>
+    </blockquote>
+
+    <p class="closing">आपकी उपस्थिति ही हमारे लिए सबसे बड़ा उपहार है।</p>
+    <div class="sign">
+      <p class="pname">Dr. Satish Chandra Srivastava</p>
+      <p class="pname">Gita Srivastava</p>
+      <p class="addr">Maharajganj Tarai, Dist. Balrampur</p>
+      <p class="addr">संपर्क: <a class="tel small" href="tel:+919889234012">9889234012</a></p>
+    </div>
+
+    <div class="pager solo"><a class="btn" href="#utsav">&larr; उत्सव</a></div>
+  </section>
+</div>
+
+<div class="doors" id="doors" aria-hidden="true">
+  <div class="door l"></div>
+  <div class="door r"></div>
+  <div class="seam"></div>
+  <div class="seal"><svg class="lotus"><use href="#lotus"/></svg></div>
+</div>
+
+<button class="music" id="music" type="button" aria-pressed="true" aria-label="संगीत चालू/बंद करें">
+  <svg class="on" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg>
+  <svg class="off" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/><path d="M3 3l18 18"/></svg>
+</button>
+<audio id="song" src="assets/song.mp3" loop preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
