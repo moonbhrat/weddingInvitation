@@ -3,8 +3,13 @@
   var DETAILS = {
     tel: { time: '', place: '' },
     vivah: { time: '', place: '' },
-    reception: { time: '', place: 'Rishta Darbar, Balrampur' }
+    vidai: { time: '', place: '' }
   };
+
+  // Always open on the first (swagat) page: drop any #utsav / #parivar left in the address and start at the top
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  window.scrollTo(0, 0);
 
   var VIEWS = ['swagat', 'utsav', 'parivar'];
   var card = document.querySelector('.card');
@@ -24,7 +29,7 @@
       el.hidden = v !== c;
       el.classList.remove('anim');
       if (v === c && animate) {
-        Array.prototype.forEach.call(el.children, function (ch, i) { ch.style.setProperty('--i', i); });
+        Array.prototype.forEach.call(el.children, function (ch, i) { ch.style.setProperty('--i', Math.min(i, 8)); });
         el.style.setProperty('--base', base || '0s');
         void el.offsetWidth;
         el.classList.add('anim');
